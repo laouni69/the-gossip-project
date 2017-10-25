@@ -1,0 +1,22 @@
+<h1>Gossips#new</h1>
+<style>
+    
+    input[type=string] {
+        border: 1px black solid;
+    }
+
+</style>
+
+<form action="/gossips" method="POST" accept-charset="UTF-8">
+    
+     <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+     
+      Author: <br><input type="string" name="gossip[anonymous_author]"><br>
+  
+      Gossip: <br><input type="string" name="gossip[content]"><br>
+      
+      <br><input type="submit" value="Submit">
+</form>
+
+<%= link_to 'Gossips', controller: 'gossips' %>
+ 

@@ -1,0 +1,13 @@
+<h1>Gossips#show</h1>
+ <p>
+  <strong>Author:</strong>
+  <%= @gossip.anonymous_author %>
+</p>
+ 
+<p>
+  <strong>Gossip:</strong>
+  <%= @gossip.content %>
+</p>
+
+
+Menu : <%= link_to 'Gossips', controller: 'gossips' %> | <%= link_to 'New Gossip', new_gossip_path %>
